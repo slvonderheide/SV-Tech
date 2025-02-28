@@ -4,12 +4,12 @@ interface AboutMeProps {
   name: string;
 }
 
-const AboutMe: React.FC<AboutMeProps> = ({ 'Stacy' }) => {
+const AboutMe: React.FC<AboutMeProps> = ({ name }) => {
   return (
     <section id="about-me" style={styles.section}>
       <h2 style={styles.h2}>About Me</h2>
       <p style={styles.paragraph}>
-        Hello! I'm {'Stacy'}, a passionate software developer.
+        Hello! I'm {name}, a passionate software developer.
       </p>
       <p style={styles.paragraph}>
         In my free time, I enjoy exploring new technologies, contributing to open-source projects, and sharing knowledge with others.
