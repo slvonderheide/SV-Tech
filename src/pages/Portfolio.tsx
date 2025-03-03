@@ -1,5 +1,5 @@
 import React from "react";
-import employee from "../assets/images/employee.png"; 
+//import employee from "../assets/images/employee.png"; 
 
 interface Project {
   id: number;
