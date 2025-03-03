@@ -1,6 +1,6 @@
 import React from 'react';
 import './Resume.css'; // Assuming your CSS file is named Resume.css
-import Stacy_Resume from '../assets/public/Stacy_Resume.pdf'; 
+//import Stacy_Resume from '../assets/public/Stacy_Resume.pdf'; 
 
 const Resume: React.FC = () => {
   return (
