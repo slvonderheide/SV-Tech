@@ -40,7 +40,7 @@ const ContactForm = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    
+
     const validName = validateField("name", formData.name);
     const validEmail = validateField("email", formData.email);
     const validMessage = validateField("message", formData.message);
@@ -63,46 +63,48 @@ const ContactForm = () => {
   const isFormValid = !errors.name && !errors.email && !errors.message && formData.name && formData.email && formData.message;
 
   return (
-    <form onSubmit={handleSubmit} className="contact-form">
-      <label>
-        Name:
-        <input
-          type="text"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-          onBlur={handleBlur} // Add the onBlur event here
-        />
-        {errors.name && <span className="error">{errors.name}</span>}
-      </label>
+    <div className="form-container">
+      <form onSubmit={handleSubmit} className="contact-form">
+        <label>
+          Name:
+          <input
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            onBlur={handleBlur}
+          />
+          {errors.name && <span className="error">{errors.name}</span>}
+        </label>
 
-      <label>
-        Email:
-        <input
-          type="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          onBlur={handleBlur} // Add the onBlur event here
-        />
-        {errors.email && <span className="error">{errors.email}</span>}
-      </label>
+        <label>
+          Email:
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            onBlur={handleBlur}
+          />
+          {errors.email && <span className="error">{errors.email}</span>}
+        </label>
 
-      <label>
-        Message:
-        <textarea
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-          onBlur={handleBlur} // Add the onBlur event here
-        />
-        {errors.message && <span className="error">{errors.message}</span>}
-      </label>
+        <label>
+          Message:
+          <textarea
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            onBlur={handleBlur}
+          />
+          {errors.message && <span className="error">{errors.message}</span>}
+        </label>
 
-      <button type="submit" disabled={!isFormValid}>
-        Submit
-      </button>
-    </form>
+        <button type="submit" disabled={!isFormValid}>
+          Submit
+        </button>
+      </form>
+    </div>
   );
 };
 

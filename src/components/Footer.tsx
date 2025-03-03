@@ -1,35 +1,23 @@
 import React from 'react';
+import { FaGithub } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
+
 
 const Footer: React.FC = () => {
   return (
-    <footer style={styles.footer}>
-      <p style={styles.text}>Connect with me:</p>
-      <div style={styles.links}>
-        <a
-          href="https://github.com/slvonderheide"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={styles.link}
-          aria-label="Visit my GitHub profile"
-        >
-          GitHub
-        </a>
-        <span style={styles.separator}> | </span>
-        <a
-          href="https://www.linkedin.com/in/stacyvonderheide-b53a3962/"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={styles.link}
-          aria-label="Visit my LinkedIn profile"
-        >
-          LinkedIn
-        </a>
-      </div>
+    <footer className="footer">
+      <a href="https://github.com/slvonderheide" target="_blank" rel="noopener noreferrer">
+        <FaGithub size={30} />
+      </a>
+      <a href="https://www.linkedin.com/in/stacyvonderheide-b53a3962/" target="_blank" rel="noopener noreferrer">
+        <FaLinkedin size={30} />
+      </a>
     </footer>
   );
 };
 
-// Optional: Define some styles
+
+
 const styles = {
   footer: {
     padding: '20px',
@@ -50,7 +38,7 @@ const styles = {
     transition: 'color 0.3s',
   },
   linkHover: {
-    color: '#61dafb', // Change this to your desired hover color
+    color: '#61dafb', 
   },
   separator: {
     margin: '0 5px',

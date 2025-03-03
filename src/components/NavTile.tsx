@@ -6,7 +6,9 @@ interface NavTileProps {
   path: string;
 }
 
-const styles = {
+import { CSSProperties } from 'react';
+
+const styles: { tile: CSSProperties; link: CSSProperties } = {
   tile: {
     padding: '20px',
     margin: '10px',
