@@ -15,8 +15,7 @@ const styles = {
 const Navigation: React.FC = () => {
   return (
     <nav style={styles.nav}>
-      <NavTile title="Home" path="/" />
-      <NavTile title="About Me" path="/about-me" />
+      <NavTile title="About Me" path="/" />
       <NavTile title="Portfolio" path="/portfolio" />
       <NavTile title="Contact" path="/contact" />
       <NavTile title="Resume" path="/resume" />

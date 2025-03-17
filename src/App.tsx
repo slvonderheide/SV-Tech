@@ -4,7 +4,6 @@ import AboutMe from './pages/About-Me.tsx';
 import Portfolio from './pages/Portfolio.tsx';
 import Contact from './pages/Contact.tsx';
 import Footer from './components/Footer.tsx';
-import Navigation from './components/Navigation.tsx';
 import React from 'react';
 import { ErrorBoundary } from './components/ErrorBoundery.tsx';
 //import myImage from './assets/images/myImage.jpg'; 
@@ -16,10 +15,8 @@ const App: React.FC = () => {
       <div>
         {/* Place Header here */}
         <Header />
-        <Navigation />
         <Routes>
-          <Route path="/home" element={<h1>Welcome to My Portfolio</h1>} />
-          <Route path="/about-me" element={<AboutMe name='Stacy' />} />
+          <Route path="/" element={<AboutMe name='Stacy' />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/resume" element={<Resume />} />
