@@ -13,6 +13,14 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
+    title: "Legacy League",
+    description: "A website for people to simulate the greatest NBA players of all time.",
+    deployedLink: "https://legacy-league.onrender.com/",
+    githubLink: "https://github.com/dpanepucci/Legacy-League",
+    image: "/Legacy-League.png", // Replace with your image URL
+  },
+  {
+    id: 2,
     title: "Adventure From Scratch",
     description: "A fun webpage that allows users to fill out their own adventure story.",
     deployedLink: "https://bharcourt27.github.io/Project1/",
@@ -20,7 +28,7 @@ const projects: Project[] = [
     image: "https://github.com/bharcourt27/Project1/blob/main/Form.png?raw=true",
   },
   {
-    id: 2,
+    id: 3,
     title: "ReadMe-Buddy-Bot",
     description: "A command line application that helps create a README file.",
     deployedLink: "https://drive.google.com/file/d/1uJx5wLWyZ4BllPyxUeFvRFkoKHGero7n/view?usp=sharing",
@@ -28,7 +36,7 @@ const projects: Project[] = [
     image: "https://bootcampspot.instructure.com/users/87630/files/3507046/preview?verifier=YPwcm1qJdMzqlTSBgVrBiWQBq1ivjzljDP1e961h",
   },
   {
-      id: 3,
+      id: 4,
       title: "Employee Database",
       description: "The Employee Tracker is a command-line interface application...",
       deployedLink: "https://drive.google.com/file/d/1fpbEhZnEBd_tZ0hpWQL_Gjv7-lj9efEh/view?usp=sharing",
@@ -36,7 +44,7 @@ const projects: Project[] = [
       image: "/employee.png",  
     },
   {
-    id: 4,
+    id: 5,
     title: "vehicleBuilder",
     description: "A command line application that allows you to create or use previous vehicles. User can complete actions with the vehicle.",
     deployedLink: "https://drive.google.com/file/d/1eJtuIb98M69VwoRcVFPhj8l-Kgf8EGr8/view?usp=sharing",
@@ -44,21 +52,14 @@ const projects: Project[] = [
     image: "/vehicle.png", 
   },
   {
-    id: 5,
+    id: 6,
     title: "Marking Agency",
     description: "A website for a Marketing Company.",
     deployedLink: "file:///C:/Users/slvon/bootcamp/OSU-VIRT-FSF-PT-11-2024-U-LOLC/01-HTML-Git-CSS/02-Challenge/Develop/index.html",
     githubLink: "https://github.com/slvonderheide",
     image: "/marketing.png", 
   },
-  {
-    id: 6,
-    title: "Employee Payroll Tracker",
-    description: "A social media app with features like posting and commenting.",
-    deployedLink: "file:///C:/Users/slvon/bootcamp/OSU-VIRT-FSF-PT-11-2024-U-LOLC/03-JavaScript/02-Challenge/Develop/index.html",
-    githubLink: "https://github.com/slvonderheide",
-    image: "/payroll.png", // Replace with your image URL
-  },
+ 
 ];
 const Portfolio: React.FC = () => {
   return (
